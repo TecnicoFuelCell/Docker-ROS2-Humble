@@ -7,7 +7,7 @@ Simple Dockerfile to run ROS2 Humble. This can/will be updated according to new 
 * If you are using Windows, install WSL2: https://learn.microsoft.com/uk-ua/windows/wsl/install 
 * Install xLaunch (VcXsrv) for GUI interface availability: https://sourceforge.net/projects/vcxsrv/
 
-#Procedure
+# Procedure
 * Just press next and install on the Docker installation
 * Install WSL2 and xLaunch
 * Download the docker file
@@ -21,7 +21,7 @@ docker build -t <name_you_want_to_give_to_the_image> .
 run --name <name_your_container> -e DISPLAY=host.docker.internal:0.0 -it <name_of_your_image>
 ```
 
-#Additional information
+# Additional information
 For usefull info about docker commands, check this https://github.com/noshluk2/ros1_wiki/blob/main/docker/commands.md
 
 The guide that was followed is: https://www.youtube.com/watch?v=qWuudNxFGOQ&t=365s
