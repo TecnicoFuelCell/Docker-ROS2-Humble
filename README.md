@@ -22,6 +22,6 @@ run --name <name_you_want_to_give_to_the_container> -e DISPLAY=host.docker.inter
 ```
 
 ## Additional information
-For usefull info about docker commands, check this https://github.com/noshluk2/ros1_wiki/blob/main/docker/commands.md
+For usefull info about docker commands, check this: https://github.com/noshluk2/ros1_wiki/blob/main/docker/commands.md
 
 The guide that was followed is: https://www.youtube.com/watch?v=qWuudNxFGOQ&t=365s
