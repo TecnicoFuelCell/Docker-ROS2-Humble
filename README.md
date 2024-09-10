@@ -18,7 +18,7 @@ docker build -t <name_you_want_to_give_to_the_image> .
 * Open xLaunch and select the display number as 0 and proceed with the pre-selected things
 * Create the container as follows:
 ```
-run --name <name_your_container> -e DISPLAY=host.docker.internal:0.0 -it <name_of_your_image>
+run --name <name_you_want_to_give_to_the_container> -e DISPLAY=host.docker.internal:0.0 -it <name_of_your_image>
 ```
 
 ## Additional information
