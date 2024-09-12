@@ -3,9 +3,9 @@
 Simple Dockerfile to run ROS2 Humble. This can/will be updated according to new needs of the TFC team.
 
 ## Pre-requisites
-* Install Docker Setup: https://www.docker.com/products/docker-desktop/
-* If you are using Windows, install WSL2: https://learn.microsoft.com/uk-ua/windows/wsl/install 
-* Install xLaunch (VcXsrv) for GUI interface availability: https://sourceforge.net/projects/vcxsrv/
+* [Install Docker Setup](https://www.docker.com/products/docker-desktop/)
+* [If you are using Windows, install WSL2](https://learn.microsoft.com/uk-ua/windows/wsl/install) 
+* [Install xLaunch (VcXsrv) for GUI interface availability](https://sourceforge.net/projects/vcxsrv/)
 
 ## Procedure
 * Just press next and install on the Docker installation
@@ -16,12 +16,19 @@ Simple Dockerfile to run ROS2 Humble. This can/will be updated according to new 
 docker build -t <name_you_want_to_give_to_the_image> .
 ```
 * Open xLaunch and select the display number as 0 and proceed with the pre-selected things
+* Create on the same directory as the Dockerfile a directory /share/catkin_ws/src
 * Create the container as follows:
+
+### If you are using Windows:
 ```
-run --name <name_you_want_to_give_to_the_container> -e DISPLAY=host.docker.internal:0.0 -it <name_of_your_image>
+docker run --name <name_you_want_to_give_to_the_container> -e DISPLAY=host.docker.internal:0.0 -it -v ${PWD}/share:/opt/share <name_of_your_image>
+```
+
+### If you are using Linux:
+```
+docker run --name <name_you_want_to_give_to_the_container> -e DISPLAY=host.docker.internal:0.0 -it -v $PWD/share:/opt/share <name_of_your_image>
 ```
 
 ## Additional information
-For usefull info about docker commands, check this: https://github.com/noshluk2/ros1_wiki/blob/main/docker/commands.md
-
-The guide that was followed is: https://www.youtube.com/watch?v=qWuudNxFGOQ&t=365s
+For usefull info about docker commands, [check this](https://github.com/noshluk2/ros1_wiki/blob/main/docker/commands.md)
+For a video tutorial of the basics, [check this video](https://www.youtube.com/watch?v=qWuudNxFGOQ&t=365s)
