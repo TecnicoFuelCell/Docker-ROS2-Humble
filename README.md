@@ -3,7 +3,7 @@
 Simple Dockerfile to run ROS2 Humble. This can/will be updated according to new needs of the TFC team.
 
 ## Pre-requisites
-* [Install Docker Setup](https://www.docker.com/products/docker-desktop/)
+* [Install Docker Setup](https://www.docker.com/products/docker-desktop/) -> just press next and install on the Docker installation
 * [If you are using Windows, install WSL2](https://learn.microsoft.com/uk-ua/windows/wsl/install) 
 * [Install xLaunch (VcXsrv) for GUI interface availability](https://sourceforge.net/projects/vcxsrv/)
 
@@ -12,8 +12,6 @@ Simple Dockerfile to run ROS2 Humble. This can/will be updated according to new 
 * If you are using Linux, run the lin script
 
 ## No Script Procedure
-* Just press next and install on the Docker installation
-* Install WSL2 and xLaunch
 * Download the docker file
 * On the directory where the docker file is, open a terminal (not a wsl one) and write:
 ```
