@@ -30,5 +30,6 @@ docker run --name <name_you_want_to_give_to_the_container> -e DISPLAY=host.docke
 ```
 
 ## Additional information
-For usefull info about docker commands, [check this](https://github.com/noshluk2/ros1_wiki/blob/main/docker/commands.md)
-For a video tutorial of the basics, [check this video](https://www.youtube.com/watch?v=qWuudNxFGOQ&t=365s)
+For usefull info about docker commands, [check this](https://github.com/noshluk2/ros1_wiki/blob/main/docker/commands.md).
+
+For a video tutorial of the basics, [check this video](https://www.youtube.com/watch?v=qWuudNxFGOQ&t=365s).
